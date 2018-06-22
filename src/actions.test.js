@@ -6,7 +6,7 @@ describe('generateAuralUpdate', () => {
         const action = generateAuralUpdate();
         expect(action.type).toEqual(GENERATE_AURAL_UPDATE);
     });
-})
+});
 
 describe('restartGame', () => {
     it('Should return the action', () => {
@@ -15,7 +15,7 @@ describe('restartGame', () => {
         expect(action.type).toEqual(RESTART_GAME);
         expect(action.correctAnswer).toEqual(correctAnswer);
     });
-})
+});
 
 describe('makeGuess', () => {
     it('Should return the action', () => {
@@ -23,5 +23,5 @@ describe('makeGuess', () => {
         const action = makeGuess(guess);
         expect(action.type).toEqual(MAKE_GUESS);
         expect(action.guess).toEqual(guess);
-    })
-})
+    });
+});
